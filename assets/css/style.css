@@ -24,7 +24,7 @@ button:hover {
 :root {
     --primary-color: #dc3545;
     --secondary-color: #f8d7da;
-    --deep-color: #8f0815;
+    --deep-color: #a80011;
 }
 
 /* ========================================= */
@@ -79,7 +79,7 @@ button:hover {
 
 .welcome .content {
     background: rgba(0, 0, 0, 0.3);
-    color: white;
+    color: rgb(241, 241, 241);
     position: relative;
     bottom: 50%;
     padding: 1rem;
@@ -130,21 +130,398 @@ button:hover {
     border-radius: 50%;
 }
 
-.info .image img{
+.info .image img {
     width: 90%;
     height: auto;
-    /* margin-left: 3rem; */
     margin-bottom: -.5rem;
-    margin-top: -1rem;
+    margin-top: -2rem;
 }
 
-.info .content .list-item i{
+.info .content .list-item i {
     margin-right: .4rem;
     color: var(--deep-color);
 }
 
-.info .content .list-item{
+.info .content .list-item {
     letter-spacing: .1rem;
     line-height: 2rem;
     font-weight: bold;
 }
+
+/* ================================== */
+/* header section */
+/* ================================== */
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18rem;
+    background-image: url("../img/header/image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    clip-path: ellipse(100% 100% at 50% 0%);
+}
+
+.header .container {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 1rem;
+    margin-top: 3.5rem;
+}
+
+.header .container .title {
+    font-weight: bolder;
+    letter-spacing: .15rem;
+    color: var(--deep-color);
+}
+
+.header .breadcrumb .breadcrumb-item {
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: .08rem;
+    color: rgba(0, 0, 0, 0.65);
+    padding-left: .5rem;
+}
+
+.header .breadcrumb-item+.breadcrumb-item::before {
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.header .breadcrumb .breadcrumb-item a {
+    color: var(--deep-color);
+    transition: all .4s ease-in-out;
+}
+
+.header .breadcrumb .breadcrumb-item a:hover {
+    color: rgb(107, 2, 2);
+}
+
+
+/* ========================================= */
+/* class section */
+/* ========================================= */
+
+.classes {
+    margin-top: 2rem;
+}
+
+.classes .title,
+.classes .subtitle {
+    letter-spacing: .17rem;
+}
+
+.classes .box {
+    height: 25rem;
+    width: 35rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.classes .box:hover {
+    box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.5);
+}
+
+.classes .box:hover .name{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.classes img {
+    height: 25rem;
+    width: 35rem;
+    background-size: cover;
+    padding: 1rem .3rem;
+    border-radius: 1.7rem;
+}
+
+.classes .name {
+    position: relative;
+    bottom: 4.5rem;
+    padding: .2rem 0rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+    letter-spacing: .18rem;
+    color: var(--primary-color);
+    background-color: rgba(0, 0, 0, 0.8);
+    clip-path: polygon(20% 0%, 85% 0%, 80% 100%, 15% 100%);
+    transition: all .8s ease-in-out;
+}
+
+.classes .button .btn {
+    padding: .7rem;
+    transition: all .5s ease-in;
+}
+
+.classes .button .btn i{
+    position: relative;
+    top: 2px;
+    color: var(--primary-color);
+    padding-left: 2px;
+    transition: all .3s ease-in;
+}
+
+.classes .button .btn:hover i{
+    transform: translateX(5px);
+    color: white;
+}
+
+.pagination-area .page-link {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    background-color: transparent;
+    border-radius: 5px;
+    margin: 0rem .2rem;
+    transition: all .4s ease-in-out;
+}
+
+.pagination-area .page-link:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.pagination-area .page-link:focus {
+    box-shadow: unset;
+}
+
+
+/* ======================= */
+/* Footer Section */
+/* ======================== */
+
+.main-footer {
+    margin-top: 3rem;
+}
+
+.main-footer .row{
+    line-height: .5rem;
+}
+
+.main-footer .title{
+    color: var(--primary-color);
+    font-weight: bold;
+    letter-spacing: .15rem;
+    margin-top: 1.5rem;
+}
+
+.main-footer .nav-link,
+.main-footer .support p {
+    color: rgba(0, 0, 0, 0.65);
+    transition: all .4s ease-in-out;
+}
+
+.main-footer .nav-link:hover {
+    color: var(--primary-color);
+    transform: scale(1.07);
+    letter-spacing: .1rem;
+}
+
+.main-footer .copyright {
+    font-weight: bolder;
+    font-size: large;
+    letter-spacing: .12rem;
+}
+
+
+/* ================== */
+/* price Section */
+/* ================== */
+
+.price .title,
+.price .subtitle {
+    letter-spacing: .12rem;
+}
+
+.price .card {
+    width: 17rem;
+    cursor: pointer;
+    border: 1px solid var(--primary-color);
+    transition: .3s ease-in;
+}
+
+.price .card:hover {
+    transform: scale(1.02);
+}
+
+.price .card .card-header,
+.price .card .amount {
+    transition: all .4s ease-in;
+}
+
+.price .card:hover .card-header {
+    background-color: var(--secondary-color);
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    border-top-right-radius: unset;
+    border-top-left-radius: unset;
+}
+
+.price .card:hover .amount {
+    transform: scale(1.2);
+}
+
+.price .card-header .title {
+    color: var(--deep-color);
+    font-weight: bolder;
+    letter-spacing: .15rem;
+    margin-top: 1rem;
+}
+
+.price .card-header .amount {
+    font-size: larger;
+}
+
+.price .card-body {
+    margin-bottom: -1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 2rem;
+}
+
+.price .card-body .list {
+    padding-left: unset;
+    padding: 0rem .8rem;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.price .card-body .list i {
+    position: relative;
+    margin-right: .4rem;
+    color: var(--primary-color);
+}
+
+.price .card-footer .btn {
+    justify-content: center;
+    transition: all .4s ease-in-out;
+}
+
+
+/* =================================== */
+/* Teacher Section  */
+/* =================================== */
+
+.trainer .box {
+    width: 22.5rem;
+    height: 23rem;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.trainer .box img {
+    width: 22.5rem;
+    height: 23rem;
+    object-fit: cover;
+}
+
+.trainer .box .name {
+    position: relative;
+    top: -27rem;
+    color: var(--deep-color);
+    background: rgba(255, 0, 0, 0.5);
+    color: rgb(243, 243, 243);
+    display: inline-block;
+    padding: .7rem;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    border-radius: 1rem;
+    transition: all 0.4s ease-in-out;
+}
+
+.trainer .box .social-links {
+    position: relative;
+    bottom: 1.8rem;
+    gap: 15px;
+    transition: all 0.4s ease-in-out;
+}
+
+.trainer .box .social-links a{
+    background: rgba(0, 0, 0, 0.65);
+    display: inline-block;
+    padding: .7rem .85rem;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+}
+
+.trainer .box:hover .name {
+    top: -20.5rem;
+}
+
+.trainer .box:hover .social-links {
+    bottom: 8.8rem;
+}
+
+.trainer .box .social-links a:hover {
+    transform: translateY(-.5rem);
+}
+
+.trainer .button .btn {
+    padding: .6rem;
+    transition: all .5s ease-in;
+}
+
+.trainer .button .btn i{
+    position: relative;
+    top: 2px;
+    color: var(--primary-color);
+    padding-left: 2px;
+    transition: all .3s ease-in;
+}
+
+.trainer .button .btn:hover i{
+    transform: translateX(5px);
+    color: white;
+}
+
+/* ======================= */
+/* Counter Section  */
+/* ======================= */
+
+
+.achivement-counter {
+    margin-bottom: 4.5rem;
+}
+
+.achivement-counter .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: .4rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.achivement-counter .card:hover {
+    border: .1rem solid var(--primary-color);
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.3);
+}
+
+.achivement-counter .card .counter-box {
+    margin-top: .5rem;
+}
+
+.achivement-counter .row {
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.achivement-counter .title {
+    font-weight: bold;
+    letter-spacing: .24rem;
+    color: var(--deep-color);
+}
+
+.achivement-counter h3,
+.achivement-counter p {
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+

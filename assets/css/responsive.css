@@ -10,10 +10,14 @@
     }
 
     /* welcome section  */
-
     .welcome .content .description {
         letter-spacing: .04rem;
         padding: 0rem 0rem;
+    }
+
+    /* header section  */
+    .header .breadcrumb .breadcrumb-item {
+        padding-left: 1rem;
     }
 
 }
@@ -24,27 +28,31 @@
 
 @media (max-width: 768px) {
 
-        /* welcome section  */
+    /* welcome section  */
+    .welcome .content {
+        bottom: 55%;
+        padding: .1rem;
+    }
 
-        .welcome .content {
-            bottom: 55%;
-            padding: .1rem;
-        }
+    /* header section  */
+    .header .breadcrumb .breadcrumb-item {
+        padding-left: .5rem;
+    }
+
 
 }
-
 
 /* ============================== */
 /* Small Breakpoint */
 /* ============================== */
 
-@media (max-width: 400px) {
+@media (max-width: 576px) {
 
-        /* welcome section  */
-
-    .welcome .content {
-        bottom: 65%;
-        padding: .1rem;
+    /* class section */
+    .classes .box,
+    .classes img {
+        height: 18rem;
+        width: 25rem;
     }
 
 
@@ -55,10 +63,46 @@
 /* Extra Small Breakpoint */
 /* ============================== */
 
+@media (max-width: 400px) {
+
+    /* welcome section  */
+    .welcome .content {
+        bottom: 65%;
+        padding: .1rem;
+    }
+
+    /* header section  */
+    .header .breadcrumb .breadcrumb-item {
+        padding-left: unset;
+    }
+
+    /* class section */
+    .classes .box,
+    .classes img {
+        height: 14rem;
+        width: 18rem;
+    }
+
+    .classes .name {
+        bottom: 3rem;
+        padding: .12rem 0rem;
+        font-size: 1.2rem;
+        letter-spacing: .12rem;
+    }
+
+
+
+
+}
+
+
+/* ============================== */
+/* Extra Extra Small Breakpoint */
+/* ============================== */
+
 @media (max-width: 250px) {
 
-        /* welcome section  */
-
+    /* welcome section  */
     .welcome .content {
         bottom: 80%;
         padding: .1rem;
