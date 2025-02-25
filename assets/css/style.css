@@ -225,7 +225,7 @@ button:hover {
     box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.5);
 }
 
-.classes .box:hover .name{
+.classes .box:hover .name {
     background-color: var(--primary-color);
     color: white;
 }
@@ -256,7 +256,7 @@ button:hover {
     transition: all .5s ease-in;
 }
 
-.classes .button .btn i{
+.classes .button .btn i {
     position: relative;
     top: 2px;
     color: var(--primary-color);
@@ -264,7 +264,7 @@ button:hover {
     transition: all .3s ease-in;
 }
 
-.classes .button .btn:hover i{
+.classes .button .btn:hover i {
     transform: translateX(5px);
     color: white;
 }
@@ -285,44 +285,6 @@ button:hover {
 
 .pagination-area .page-link:focus {
     box-shadow: unset;
-}
-
-
-/* ======================= */
-/* Footer Section */
-/* ======================== */
-
-.main-footer {
-    margin-top: 3rem;
-}
-
-.main-footer .row{
-    line-height: .5rem;
-}
-
-.main-footer .title{
-    color: var(--primary-color);
-    font-weight: bold;
-    letter-spacing: .15rem;
-    margin-top: 1.5rem;
-}
-
-.main-footer .nav-link,
-.main-footer .support p {
-    color: rgba(0, 0, 0, 0.65);
-    transition: all .4s ease-in-out;
-}
-
-.main-footer .nav-link:hover {
-    color: var(--primary-color);
-    transform: scale(1.07);
-    letter-spacing: .1rem;
-}
-
-.main-footer .copyright {
-    font-weight: bolder;
-    font-size: large;
-    letter-spacing: .12rem;
 }
 
 
@@ -397,7 +359,13 @@ button:hover {
 
 .price .card-footer .btn {
     justify-content: center;
-    transition: all .4s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.price .card-footer .btn:hover {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
 }
 
 
@@ -435,15 +403,15 @@ button:hover {
 .trainer .box .social-links {
     position: relative;
     bottom: 1.8rem;
-    gap: 15px;
     transition: all 0.4s ease-in-out;
 }
 
-.trainer .box .social-links a{
-    background: rgba(0, 0, 0, 0.65);
+.trainer .box .social-links a {
+    background: rgba(255, 255, 255, 0.8);
     display: inline-block;
-    padding: .7rem .85rem;
+    padding: .5rem .65rem;
     border-radius: 50%;
+    margin: 0rem .15rem;
     transition: all 0.4s ease-in-out;
 }
 
@@ -464,7 +432,7 @@ button:hover {
     transition: all .5s ease-in;
 }
 
-.trainer .button .btn i{
+.trainer .button .btn i {
     position: relative;
     top: 2px;
     color: var(--primary-color);
@@ -472,7 +440,7 @@ button:hover {
     transition: all .3s ease-in;
 }
 
-.trainer .button .btn:hover i{
+.trainer .button .btn:hover i {
     transform: translateX(5px);
     color: white;
 }
@@ -525,3 +493,168 @@ button:hover {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+
+/* ========================== */
+/* Schedule Section */
+/* ========================== */
+
+.schedule .table-responsive {
+    scrollbar-color: var(--primary-color) var(--primary-color);
+}
+
+.schedule .table td {
+    padding: 1.3rem;
+    color: gray;
+}
+
+.schedule .table th {
+    color: var(--deep-color);
+    padding: 1.3rem;
+    font-size: 1.2rem;
+    border: 1px solid var(--primary-color);
+    letter-spacing: .07rem;
+}
+
+
+/* =========================== */
+/* Contact Section  */
+/* =========================== */
+
+.contact .title,
+.contact span {
+    letter-spacing: .1rem;
+}
+
+.contact .contact-form {
+    border-radius: 2rem;
+    border-top-left-radius: unset;
+    border-bottom-right-radius: unset;
+}
+
+.contact .form-control {
+    border: unset;
+    border-top-left-radius: unset;
+    border-bottom-right-radius: unset;
+    border-top-right-radius: .99rem;
+    border-bottom-left-radius: .99rem;
+}
+
+.contact .form-control:focus {
+    box-shadow: unset;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.contact .form-label {
+    color: var(--deep-color);
+    box-sizing: unset;
+    transition: all .3s ease-in-out;
+}
+
+.contact .form-floating input:focus ~ label,
+.contact .form-floating input:not(:placeholder-shown) ~ label,
+.contact .form-floating textarea:focus ~ label,
+.contact .form-floating textarea:not(:placeholder-shown) ~ label {
+    color: var(--deep-color);
+}
+
+.contact .btn {
+    transition: all .4s ease-in-out;
+}
+
+
+/* ======================= */
+/* About Section */
+/* ======================== */
+
+.about .title,
+.about-feature .title {
+    letter-spacing: .14rem;
+}
+
+.about .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 17rem;
+}
+
+.about img {
+    border: 1px solid var(--primary-color);
+}
+
+.about .content .btn {
+    font-weight: bolder;
+    letter-spacing: .12rem;
+    transition: all .5s ease-in-out;
+}
+
+.about .content .btn:hover {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--deep-color);
+}
+
+.about-feature .container {
+    border-radius: 1rem;
+}
+
+.about-feature .card {
+    cursor: pointer;
+    border: 1px solid var(--primary-color);
+    transition: all .4s ease-in-out;
+}
+
+.about-feature .card:hover {
+    box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.4);
+}
+
+.about-feature .icon {
+    margin-top: 1rem;
+}
+
+.about-feature .subtitle {
+    margin-top: -1rem;
+}
+
+
+/* ======================= */
+/* Footer Section */
+/* ======================== */
+
+.main-footer {
+    margin-top: 3rem;
+}
+
+.main-footer .row {
+    line-height: .5rem;
+}
+
+.main-footer .title {
+    color: var(--primary-color);
+    font-weight: bold;
+    letter-spacing: .15rem;
+    margin-top: 1.5rem;
+}
+
+.main-footer .support span,
+.main-footer .support p {
+    line-height: 1rem;
+}
+
+.main-footer .nav-link,
+.main-footer .support p {
+    color: rgba(0, 0, 0, 0.65);
+    transition: all .4s ease-in-out;
+}
+
+.main-footer .nav-link:hover {
+    color: var(--primary-color);
+    transform: scale(1.07);
+    letter-spacing: .1rem;
+}
+
+.main-footer .copyright {
+    font-weight: bolder;
+    font-size: large;
+    letter-spacing: .12rem;
+}

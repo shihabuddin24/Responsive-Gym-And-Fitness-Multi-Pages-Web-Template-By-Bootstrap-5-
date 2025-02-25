@@ -20,6 +20,15 @@
         padding-left: 1rem;
     }
 
+    /* about section */
+    .about .content .title {
+        margin-top: 1rem;
+    }
+
+    .about .content {
+        height: auto;
+    }
+
 }
 
 /* ============================== */
